@@ -11,7 +11,6 @@ public class SphereSpawner : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     private Vector3 _formattedMousePos;
     private Vector3 _startPosition;
 
-    // Update is called once per frame
     void Update()
     {
         // sets up the mouseTarget to follow the cursor 
