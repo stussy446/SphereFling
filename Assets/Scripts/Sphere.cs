@@ -1,23 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Sphere : MonoBehaviour
 {
-    private Renderer _sphereRenderer;
+    private Material _sphereMaterial;
     private void Start()
     {
-        _sphereRenderer = GetComponent<Renderer>();
+        _sphereMaterial = GetComponent<Renderer>().material;
 
-        Color fresnalColor = new Color(
-        Random.Range(0.1f, 1f),
-        Random.Range(0.1f, 1f),
-        Random.Range(0.1f, 1f)
-        );
-
-        _sphereRenderer.material.SetColor("_FresnelColor", GenerateRandomColor());
-        _sphereRenderer.material.SetColor("_BaseColor", GenerateRandomColor());
-
+        _sphereMaterial.SetColor("_FresnelColor", GenerateRandomColor());
+        _sphereMaterial.SetColor("_BaseColor", GenerateRandomColor());
     }
 
     private Color GenerateRandomColor()

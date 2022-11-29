@@ -50,5 +50,8 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    m_Colors: []
+    m_Colors:
+    - _BaseColor: {r: 0.9245283, g: 0.065414704, b: 0.7541322, a: 0}
+    - _FresnelColor: {r: 3.733334, g: 0.05863875, b: 0.05863875, a: 0}
+    - _SphereColor: {r: 0.23455507, g: 3.752881, b: 14.933339, a: 0}
   m_BuildTextureStacks: []
